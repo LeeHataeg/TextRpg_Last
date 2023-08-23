@@ -1,19 +1,19 @@
 # TextRpg_Last
 ---
-##구현한 기능 목록
+## 구현한 기능 목록
 
-###필수기능
+### 필수기능
 
-###나만의 아이템(포션)
+### 나만의 아이템(포션)
 
-###인벤토리 크기 맞춤
+### 인벤토리 크기 맞춤
 
-###상점
+### 상점
 
-###장착 개선
+### 장착 개선
 
 ---
-##아이템 추가와 아이템 관리
+## 아이템 추가와 아이템 관리
 관리의 편의성을 위해 아이템 클래스를 부모클래스로 하여, 각각 무기, 갑옷, 포션을 자식 클래스로 구현했다.
 원래는 이를 이용해 아이템 정렬을 아이템 종류 별로 구현하고자 했으나 실력 부족으로 시간이 부족해 구현하지 못했다.
 
@@ -32,7 +32,7 @@
 해서 그냥 리스트로 저장했다.
 
 ---
-##아이템 정렬
+## 아이템 정렬
 
         string InvenStr_Name = "          |";
         string Replace_Name = string.Empty;
@@ -59,7 +59,7 @@
 
 
 ---
-##문자열의 색상을 변경
+## 문자열의 색상을 변경
 
         Console.ForegroundColor = ConsoleColor.Red;
         Console.Write("문자열");
@@ -67,7 +67,7 @@
 
 위와 같이 일일이 작성했다.
 ---
-##장착관리
+## 장착관리
 
         bool isEquiped = myInven[i].Item_Name.Contains("[E]");
         myInven[exArmorNum].Item_Name = myInven[exArmorNum].Item_Name.Replace("[E]", "");
@@ -75,6 +75,6 @@
 로 "[E]"라는 특정 문자열이 있는지 확인한 후, 있다면 ""으로 교체해 제거했다.
 
 ---
-##TIL
+## TIL
 <https://blog.naver.com/gkxor031/223189702305>
 <https://blog.naver.com/gkxor031/223190655059>
